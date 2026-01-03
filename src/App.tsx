@@ -14,6 +14,7 @@ import StudentOrders from "./pages/student/StudentOrders";
 import Checkout from "./pages/student/Checkout";
 import Dashboard from "./pages/canteen/Dashboard";
 import MenuManagement from "./pages/canteen/MenuManagement";
+import AIAssistant from "./pages/canteen/AIAssistant";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,7 +42,7 @@ const App = () => (
               <Route path="/canteen/orders" element={<Dashboard />} />
               <Route path="/canteen/staff" element={<Dashboard />} />
               <Route path="/canteen/reports" element={<Dashboard />} />
-              <Route path="/canteen/ai" element={<Dashboard />} />
+              <Route path="/canteen/ai" element={<AIAssistant />} />
               <Route path="/canteen/settings" element={<Dashboard />} />
               
               <Route path="*" element={<NotFound />} />
